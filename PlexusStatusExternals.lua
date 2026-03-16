@@ -29,110 +29,110 @@ PlexusStatusExternals.menuName = "Tanking cooldowns"  --luacheck: ignore 112
 local tankingbuffs
 if IsRetailWow() then
 tankingbuffs = {
-    ["DEATHKNIGHT"] = {
-        48707, -- Anti-Magic Shell
-        50461, -- Anti-Magic Zone
-        77535, -- Blood Shield
-        195181, -- Bone Shield
-        49028, -- Dancing Rune Weapon
-        48792, -- Icebound Fortitude
-        55233, -- Vampiric Blood
-    },
-    ["DEMONHUNTER"] = {
-        198589, -- Blur
-        209426,  -- Darkness
-        203819,  -- Demon Spikes
-        187827,  -- Metamorphosis
-        207810,  -- Nether Bond
-    },
-    ["DRUID"] = {
-        22812,  -- Barkskin
-        102351, -- Cenarion Ward
-        102342, -- Ironbark
-        192081, -- Ironfur
-        105737, -- Might of Ursoc (Mass Regeneration tier bonus)
-        61336,  -- Survival Instincts
-        740,    -- Tranquility
-    },
-    ["EVOKER"] = {
-        357170, -- Time Dilation
-        363534, -- Rewind
-        363916, -- Obsidian Scale
-        374348, -- Renewing Blaze
-        360827, -- Blistering Scales
-    },
-    ["HUNTER"] = {
-        186265,  -- Aspect of the Turtle
-        19263,  -- Deterrence
-    },
-    ["MAGE"] = {
-        11426,  -- Ice Barrier
-        235313, -- Blazing Barrier
-        235450, -- Prismatic Barrier
-        45438,  -- Ice Block
-        113862, -- Greater Invisibility
-    },
-    ["MONK"] = {
-        122278, -- Dampen Harm
-        122783, -- Diffuse Magic
-        115308, -- Elusive Brew
-        243435, -- Fortifying Brew
-        116849, -- Life Cocoon
-        124275, -- Light Stagger
-        124274, -- Moderate Stagger
-        124273, -- Heavy Stagger
-        115176, -- Zen Meditation
-    },
-    ["PALADIN"] = {
-        31850,   -- Ardent Defender
-        1044,    -- Blessing of Freedom
-        1022,    -- Blessing of Protection
-        6940,    -- Blessing of Sacrifice
-        204018,  -- Blessing of Spellwarding
-        465,     -- Devotion Aura
-        498,     -- Divine Protection
-        642,     -- Divine Shield
-        86659,   -- Guardian of Ancient Kings
-        132403,  -- Shield of the Righteous
-        184662,  -- Shield of Vengeance
-    },
-    ["PRIEST"] = {
-        47585,  -- Dispersion
-        64843,  -- Divine Hymn
-        47788,  -- Guardian Spirit
-        33206,  -- Pain Suppression
-        81782,  -- Power Word: Barrier
-        15286,  -- Vampiric Embrace
-    },
-    ["ROGUE"] = {
-        31224,  -- Cloak of Shadows
-        5277,   -- Evasion
-        1966,   -- Feint
-        76577,  -- Smoke Bomb
-    },
-    ["SHAMAN"] = {
-        207399, -- Ancestral Protection Totem
-        108271, -- Astral Shift
-        98008,  -- Spirit Link Totem
-        114893, -- Stone Bulwark Totem
-    },
-    ["WARLOCK"] = {
-        108359, -- Dark Regeneration
-        212295, -- Nether Ward
-        108416, -- Dark Pact
-        104773, -- Unending Resolve
-    },
-    ["WARRIOR"] = {
-        118038, -- Die by the Sword
-        190456, -- Ignore Pain
-        12975,  -- Last Stand
-        97463,  -- Commanding Shout
-        122973, -- Safeguard
-        2565,   -- Shield Block
-        871,    -- Shield Wall
-        23920,  -- Spell Reflection
-        114030, -- Vigilance
-    }
+    --["DEATHKNIGHT"] = {
+    --    48707, -- Anti-Magic Shell
+    --    50461, -- Anti-Magic Zone
+    --    77535, -- Blood Shield
+    --    195181, -- Bone Shield
+    --    49028, -- Dancing Rune Weapon
+    --    48792, -- Icebound Fortitude
+    --    55233, -- Vampiric Blood
+    --},
+    --["DEMONHUNTER"] = {
+    --    198589, -- Blur
+    --    209426,  -- Darkness
+    --    203819,  -- Demon Spikes
+    --    187827,  -- Metamorphosis
+    --    207810,  -- Nether Bond
+    --},
+    --["DRUID"] = {
+    --    22812,  -- Barkskin
+    --    102351, -- Cenarion Ward
+    --    102342, -- Ironbark
+    --    192081, -- Ironfur
+    --    105737, -- Might of Ursoc (Mass Regeneration tier bonus)
+    --    61336,  -- Survival Instincts
+    --    740,    -- Tranquility
+    --},
+    --["EVOKER"] = {
+    --    357170, -- Time Dilation
+    --    363534, -- Rewind
+    --    363916, -- Obsidian Scale
+    --    374348, -- Renewing Blaze
+    --    360827, -- Blistering Scales
+    --},
+    --["HUNTER"] = {
+    --    186265,  -- Aspect of the Turtle
+    --    19263,  -- Deterrence
+    --},
+    --["MAGE"] = {
+    --    11426,  -- Ice Barrier
+    --    235313, -- Blazing Barrier
+    --    235450, -- Prismatic Barrier
+    --    45438,  -- Ice Block
+    --    113862, -- Greater Invisibility
+    --},
+    --["MONK"] = {
+    --    122278, -- Dampen Harm
+    --    122783, -- Diffuse Magic
+    --    115308, -- Elusive Brew
+    --    243435, -- Fortifying Brew
+    --    116849, -- Life Cocoon
+    --    124275, -- Light Stagger
+    --    124274, -- Moderate Stagger
+    --    124273, -- Heavy Stagger
+    --    115176, -- Zen Meditation
+    --},
+    --["PALADIN"] = {
+    --    31850,   -- Ardent Defender
+    --    1044,    -- Blessing of Freedom
+    --    1022,    -- Blessing of Protection
+    --    6940,    -- Blessing of Sacrifice
+    --    204018,  -- Blessing of Spellwarding
+    --    465,     -- Devotion Aura
+    --    498,     -- Divine Protection
+    --    642,     -- Divine Shield
+    --    86659,   -- Guardian of Ancient Kings
+    --    132403,  -- Shield of the Righteous
+    --    184662,  -- Shield of Vengeance
+    --},
+    --["PRIEST"] = {
+    --    47585,  -- Dispersion
+    --    64843,  -- Divine Hymn
+    --    47788,  -- Guardian Spirit
+    --    33206,  -- Pain Suppression
+    --    81782,  -- Power Word: Barrier
+    --    15286,  -- Vampiric Embrace
+    --},
+    --["ROGUE"] = {
+    --    31224,  -- Cloak of Shadows
+    --    5277,   -- Evasion
+    --    1966,   -- Feint
+    --    76577,  -- Smoke Bomb
+    --},
+    --["SHAMAN"] = {
+    --    207399, -- Ancestral Protection Totem
+    --    108271, -- Astral Shift
+    --    98008,  -- Spirit Link Totem
+    --    114893, -- Stone Bulwark Totem
+    --},
+    --["WARLOCK"] = {
+    --    108359, -- Dark Regeneration
+    --    212295, -- Nether Ward
+    --    108416, -- Dark Pact
+    --    104773, -- Unending Resolve
+    --},
+    --["WARRIOR"] = {
+    --    118038, -- Die by the Sword
+    --    190456, -- Ignore Pain
+    --    12975,  -- Last Stand
+    --    97463,  -- Commanding Shout
+    --    122973, -- Safeguard
+    --    2565,   -- Shield Block
+    --    871,    -- Shield Wall
+    --    23920,  -- Spell Reflection
+    --    114030, -- Vigilance
+    --}
 }
 end
 
@@ -353,49 +353,54 @@ PlexusStatusExternals.defaultDB = { --luacheck: ignore 112
 }
 end
 
-local myoptions = {
-    ["PSE_header_1"] = {
-        type = "header",
-        order = 200,
-        name = "Options",
-    },
-    ["showtextas"] = {
-        order = 201,
-        type = "select",
-        name = "Show text as",
-        desc = "Text to show when assigned to an indicator capable of displaying text",
-        values = { ["caster"] = "Caster name", ["spell"] = "Spell name" },
-        style = "radio",
-        get = function() return PlexusStatusExternals.db.profile.alert_externals.showtextas end,
-        set = function(_, v) PlexusStatusExternals.db.profile.alert_externals.showtextas = v end, --luacheck: ignore 112
-    },
-    ["PSE_header_2"] = {
-        type = "header",
-        order = 203,
-        name = "Spells",
-    },
-    ["spells_description"] = {
-        type = "description",
-        order = 204,
-        name = "Check the spells that you want PlexusStatusExternals to keep track of. Their position on the list defines their priority in the case that a unit has more than one of them.",
-    },
-    ["spells"] = {
-        type = "input",
-        order = 205,
-        name = "Spells",
-        control = "PSE-SpellsConfig",
-    },
-}
+local myoptions = {}
+if not Plexus:IsRetailWow() then
+    myoptions = {
+        ["PSE_header_1"] = {
+            type = "header",
+            order = 200,
+            name = "Options",
+        },
+        ["showtextas"] = {
+            order = 201,
+            type = "select",
+            name = "Show text as",
+            desc = "Text to show when assigned to an indicator capable of displaying text",
+            values = { ["caster"] = "Caster name", ["spell"] = "Spell name" },
+            style = "radio",
+            get = function() return PlexusStatusExternals.db.profile.alert_externals.showtextas end,
+            set = function(_, v) PlexusStatusExternals.db.profile.alert_externals.showtextas = v end, --luacheck: ignore 112
+        },
+        ["PSE_header_2"] = {
+            type = "header",
+            order = 203,
+            name = "Spells",
+        },
+        ["spells_description"] = {
+            type = "description",
+            order = 204,
+            name = "Check the spells that you want PlexusStatusExternals to keep track of. Their position on the list defines their priority in the case that a unit has more than one of them.",
+        },
+        ["spells"] = {
+            type = "input",
+            order = 205,
+            name = "Spells",
+            control = "PSE-SpellsConfig",
+        },
+    }
+end
 
 function PlexusStatusExternals:OnInitialize() --luacheck: ignore 112
     self.super.OnInitialize(self)
 
-    for class, buffs in pairs(tankingbuffs) do --luacheck: ignore 213
-        for _, spellid in pairs(buffs) do
-            local spellInfo = GetSpellInfo(spellid)
-            local sname = spellInfo and spellInfo.name or nil
-            if not sname then print(spellid, ": Bad spellid") end
-            spellnames[spellid] = sname or tostring(spellid)
+    if not Plexus:IsRetailWow() then
+        for class, buffs in pairs(tankingbuffs) do --luacheck: ignore 213
+            for _, spellid in pairs(buffs) do
+                local spellInfo = GetSpellInfo(spellid)
+                local sname = spellInfo and spellInfo.name or nil
+                if not sname then print(spellid, ": Bad spellid") end
+                spellnames[spellid] = sname or tostring(spellid)
+            end
         end
     end
 
@@ -403,35 +408,37 @@ function PlexusStatusExternals:OnInitialize() --luacheck: ignore 112
 
     settings = self.db.profile.alert_externals
 
-    -- delete old format settings
-    if settings.spellids then
-        settings.spellids = nil
-    end
+    if not Plexus:IsRetailWow() then
+        -- delete old format settings
+        if settings.spellids then
+            settings.spellids = nil
+        end
 
-    -- remove old spellids
-    for p, aspellid in ipairs(settings.active_spellids) do
-        local found = false
-        for class, buffs in pairs(tankingbuffs) do --luacheck: ignore 213
-            for _, spellid in pairs(buffs) do
-                if spellid == aspellid then
-                    found = true
-                    break
+        -- remove old spellids
+        for p, aspellid in ipairs(settings.active_spellids) do
+            local found = false
+            for class, buffs in pairs(tankingbuffs) do --luacheck: ignore 213
+                for _, spellid in pairs(buffs) do
+                    if spellid == aspellid then
+                        found = true
+                        break
+                    end
+                end
+            end
+
+            if not found then
+                table.remove(settings.active_spellids, p)
+            end
+
+            -- remove duplicates
+            for i = #settings.active_spellids, p + 1, -1 do
+                if settings.active_spellids[i] == aspellid then
+                    table.remove(settings.active_spellids, i)
                 end
             end
         end
-
-        if not found then
-            table.remove(settings.active_spellids, p)
-        end
-
-        -- remove duplicates
-        for i = #settings.active_spellids, p + 1, -1 do
-            if settings.active_spellids[i] == aspellid then
-                table.remove(settings.active_spellids, i)
-            end
-        end
+        self:UpdateAuraScanList()
     end
-    self:UpdateAuraScanList()
 end
 
 function PlexusStatusExternals:UpdateAuraScanList() --luacheck: ignore 212 112
@@ -482,7 +489,9 @@ function PlexusStatusExternals:UpdateAllUnits() --luacheck: ignore 112
             self:ScanUnit("UpdateAllUnits", unitid, guid)
         end
     end
-    self:UpdateAuraScanList()
+    if not IsRetailWow() then
+        self:UpdateAuraScanList()
+    end
 end
 
 local unitAuras
@@ -498,102 +507,117 @@ function PlexusStatusExternals:ScanUnitByAuraInfo(event, unit, updatedAuras)
     if not PlexusRoster:IsGUIDInRaid(guid) then
         return
     end
-
-    -- Full Update
-    if updatedAuras and updatedAuras.isFullUpdate then
-        local unitauraInfo = {}
-        ForEachAura(unit, "HELPFUL", nil,
-            function(aura)
-                if aura and aura.auraInstanceID then
-                    unitauraInfo[aura.auraInstanceID] = aura
-                end
-            end,
-        true)
-
-        if unitAuras[guid] then
-            unitAuras[guid] = nil
-            self.core:SendStatusLost(guid, "alert_externals")
-        end
-
-        for _, v in pairs(unitauraInfo) do
-            if not unitAuras[guid] then
-                unitAuras[guid] = {}
-            end
-            if v.spellId and spellid_list[v.spellId] then
-                unitAuras[guid][v.auraInstanceID] = v
-            end
-        end
+    if Plexus.IsSpecialUnit[unit] then
+        return
     end
 
-    if updatedAuras and updatedAuras.addedAuras then
-        for _, aura in pairs(updatedAuras.addedAuras) do
-            if aura.spellId and spellid_list[aura.spellId] then
-                if not unitAuras[guid] then
-                    unitAuras[guid] = {}
-                end
-                unitAuras[guid][aura.auraInstanceID] = aura
-            end
-        end
+    local filter = "HELPFUL|EXTERNAL_DEFENSIVE"
+    local result = C_UnitAuras.GetUnitAuras(unit, filter , 1 , Enum.UnitAuraSortRule.ExpirationOnly , Enum.UnitAuraSortDirection.Normal)
+    --local dur = result and result[1] and C_UnitAuras.GetAuraDurationRemainingByAuraInstanceID(unit, result[1].auraInstanceID)
+    if result and result[1] then
+        self.core:SendStatusGained(
+            guid, "alert_externals", settings.priority, (settings.range and 40),
+            nil, nil, nil, nil, result[1].icon, nil, dur, result[1].applications, nil, result[1].expirationTime)
+    else
+        self.core:SendStatusLost(guid, "alert_externals")
     end
+    return
 
-    if updatedAuras and updatedAuras.updatedAuraInstanceIDs then
-        for _, auraInstanceID in ipairs(updatedAuras.updatedAuraInstanceIDs) do
-            local auraTable = GetAuraDataByAuraInstanceID(unit, auraInstanceID)
-            if unitAuras[guid] and unitAuras[guid][auraInstanceID] and not auraTable then
-                self.core:SendStatusLost(guid, "alert_externals")
-                unitAuras[guid][auraInstanceID] = nil
-            end
-            if auraTable and auraTable.spellId and spellid_list[auraTable.spellId] then
-                if not unitAuras[guid] then
-                    unitAuras[guid] = {}
-                end
-                unitAuras[guid][auraInstanceID] = auraTable
-            end
-        end
-    end
-
-    if updatedAuras and updatedAuras.removedAuraInstanceIDs then
-        for _, auraInstanceID in ipairs(updatedAuras.removedAuraInstanceIDs) do
-            if unitAuras[guid] and unitAuras[guid][auraInstanceID] then
-                unitAuras[guid][auraInstanceID] = nil
-                self.core:SendStatusLost(guid, "alert_externals")
-            end
-        end
-    end
-
-    if unitAuras[guid] then
-        local numAuras = 0
-        for instanceID, info in pairs(unitAuras[guid]) do
-            if unitAuras[guid][instanceID] then
-                numAuras = numAuras + 1
-                local name, uicon, count, duration, expirationTime, caster = info.name, info.icon, info.applications, info.duration, info.expirationTime, info.sourceUnit
-                local text
-                if settings.showtextas == "caster" and caster then
-                    text = UnitName(caster)
-                else
-                    text = name
-                end
-                self.core:SendStatusGained(guid,
-                    "alert_externals",
-                    settings.priority,
-                    (settings.range and 40),
-                    settings.color,
-                    text,
-                    0,							-- value
-                    nil,						-- maxValue
-                    uicon,						-- icon
-                    expirationTime - duration,	-- start
-                    duration,					-- duration
-                    count                       -- stack
-                )
-            end
-        end
-
-        if numAuras == 0 then
-            unitAuras[guid] = nil
-            self.core:SendStatusLost(guid, "alert_externals")
-        end
-    end
+    ---- Full Update
+    --if updatedAuras and updatedAuras.isFullUpdate then
+    --    local unitauraInfo = {}
+    --    ForEachAura(unit, "HELPFUL", nil,
+    --        function(aura)
+    --            if aura and aura.auraInstanceID then
+    --                unitauraInfo[aura.auraInstanceID] = aura
+    --            end
+    --        end,
+    --    true)
+--
+    --    if unitAuras[guid] then
+    --        unitAuras[guid] = nil
+    --        self.core:SendStatusLost(guid, "alert_externals")
+    --    end
+--
+    --    for _, v in pairs(unitauraInfo) do
+    --        if not unitAuras[guid] then
+    --            unitAuras[guid] = {}
+    --        end
+    --        if v.spellId and spellid_list[v.spellId] then
+    --            unitAuras[guid][v.auraInstanceID] = v
+    --        end
+    --    end
+    --end
+--
+    --if updatedAuras and updatedAuras.addedAuras then
+    --    for _, aura in pairs(updatedAuras.addedAuras) do
+    --        if aura.spellId and spellid_list[aura.spellId] then
+    --            if not unitAuras[guid] then
+    --                unitAuras[guid] = {}
+    --            end
+    --            unitAuras[guid][aura.auraInstanceID] = aura
+    --        end
+    --    end
+    --end
+--
+    --if updatedAuras and updatedAuras.updatedAuraInstanceIDs then
+    --    for _, auraInstanceID in ipairs(updatedAuras.updatedAuraInstanceIDs) do
+    --        local auraTable = GetAuraDataByAuraInstanceID(unit, auraInstanceID)
+    --        if unitAuras[guid] and unitAuras[guid][auraInstanceID] and not auraTable then
+    --            self.core:SendStatusLost(guid, "alert_externals")
+    --            unitAuras[guid][auraInstanceID] = nil
+    --        end
+    --        if auraTable and auraTable.spellId and spellid_list[auraTable.spellId] then
+    --            if not unitAuras[guid] then
+    --                unitAuras[guid] = {}
+    --            end
+    --            unitAuras[guid][auraInstanceID] = auraTable
+    --        end
+    --    end
+    --end
+--
+    --if updatedAuras and updatedAuras.removedAuraInstanceIDs then
+    --    for _, auraInstanceID in ipairs(updatedAuras.removedAuraInstanceIDs) do
+    --        if unitAuras[guid] and unitAuras[guid][auraInstanceID] then
+    --            unitAuras[guid][auraInstanceID] = nil
+    --            self.core:SendStatusLost(guid, "alert_externals")
+    --        end
+    --    end
+    --end
+--
+    --if unitAuras[guid] then
+    --    local numAuras = 0
+    --    for instanceID, info in pairs(unitAuras[guid]) do
+    --        if unitAuras[guid][instanceID] then
+    --            numAuras = numAuras + 1
+    --            local name, uicon, count, duration, expirationTime, caster = info.name, info.icon, info.applications, info.duration, info.expirationTime, info.sourceUnit
+    --            local text
+    --            if settings.showtextas == "caster" and caster then
+    --                text = UnitName(caster)
+    --            else
+    --                text = name
+    --            end
+    --            self.core:SendStatusGained(guid,
+    --                "alert_externals",
+    --                settings.priority,
+    --                (settings.range and 40),
+    --                settings.color,
+    --                text,
+    --                0,							-- value
+    --                nil,						-- maxValue
+    --                uicon,						-- icon
+    --                expirationTime - duration,	-- start
+    --                duration,					-- duration
+    --                count                       -- stack
+    --            )
+    --        end
+    --    end
+--
+    --    if numAuras == 0 then
+    --        unitAuras[guid] = nil
+    --        self.core:SendStatusLost(guid, "alert_externals")
+    --    end
+    --end
 end
 
 function PlexusStatusExternals:ScanUnit(_, unitid, unitguid) --luacheck: ignore 112
